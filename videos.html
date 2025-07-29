@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Videos | SKY Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .video-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .video-card {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .video-card iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+    }
+
+    .video-card .description {
+      padding: 10px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .video-title {
+      text-align: center;
+      padding: 10px;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Watermark -->
+  <div class="watermark">THE SKY</div>
+
+  <!-- Header -->
+  <header>
+    <h1>SKY Project Videos</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="sky-files.html">SKY Files</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="videos.html" class="active">Videos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Videos Section -->
+  <main>
+    <h2 class="video-title">Watch SKY In Action</h2>
+    <p style="text-align:center;">Demo clips, transformation tests, app usage, AI interactions, and project updates.</p>
+
+    <div class="video-gallery">
+      <!-- Replace these with your actual YouTube links or local video files -->
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        <div class="description">SKY Prototype Demo</div>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/3GwjfUFyY6M" allowfullscreen></iframe>
+        <div class="description">Transformation Sequence</div>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/V-_O7nl0Ii0" allowfullscreen></iframe>
+        <div class="description">SKY Voice Command Test</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SKY Assistant Project. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

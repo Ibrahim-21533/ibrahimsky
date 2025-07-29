@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SKY - FAQ</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".faq-item").forEach(item => {
+        item.addEventListener("click", () => {
+          item.classList.toggle("open");
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Frequently Asked Questions</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About SKY</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="faq-section">
+    <h2>Your Questions Answered</h2>
+
+    <div class="faq-container">
+      <div class="faq-item">
+        <div class="faq-question">What is SKY and how does it work?</div>
+        <div class="faq-answer">SKY is a personal AI assistant system that helps you manage tasks, control devices, and interact with your data through intelligent voice commands, all accessible from mobile or PC.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Can SKY work offline?</div>
+        <div class="faq-answer">Yes. SKY includes offline features such as voice reminders, alarms, local device control, and memory-based interactions.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Is my data private and secure?</div>
+        <div class="faq-answer">Absolutely. SKY includes Privacy Mode, where sensitive features are locked unless verified by the owner, and no data is shared without your permission.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Can I use SKY on both phone and computer?</div>
+        <div class="faq-answer">Yes. SKY is designed to sync between Android devices and PCs, with future integration planned for cloud-based memory and remote access.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">What languages does SKY support?</div>
+        <div class="faq-answer">SKY supports English and Kiswahili, with customizable command training so you can personalize the assistant’s understanding of your preferred terms.</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SKY AI Project. All rights reserved.</p>
+  </footer>
+</body>
+</html>

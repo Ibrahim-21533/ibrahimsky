@@ -1,0 +1,45 @@
+/* style.css — Futuristic SKY AI Theme */
+
+/* Reset and Base */
+
+{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+
+body { background: linear-gradient(to right, #0f0f0f, #1a1a1a); color: #e0e0e0; line-height: 1.6; min-height: 100vh; background-image: url('sky-watermark.png'); background-repeat: no-repeat; background-position: center; background-size: 80%; opacity: 0.95; }
+
+header { background: rgba(0, 0, 0, 0.85); padding: 1.2rem; border-bottom: 2px solid #00f0ff; text-align: center; position: sticky; top: 0; z-index: 999; backdrop-filter: blur(10px); }
+
+header h1 { color: #00f0ff; font-size: 2.2rem; text-shadow: 0 0 10px #00f0ff; }
+
+nav { background: #121212; padding: 0.5rem; display: flex; justify-content: center; gap: 1.5rem; }
+
+nav a { color: #ccc; text-decoration: none; padding: 0.6rem 1rem; border-radius: 8px; transition: background 0.3s, color 0.3s; }
+
+nav a:hover { background: #00f0ff; color: #000; }
+
+main { padding: 2rem; max-width: 1000px; margin: auto; background: rgba(20, 20, 20, 0.9); border-radius: 12px; box-shadow: 0 0 20px rgba(0, 240, 255, 0.1); }
+
+section { margin-bottom: 2.5rem; animation: fadeIn 1s ease; }
+
+section h2 { border-bottom: 2px solid #00f0ff; padding-bottom: 0.5rem; margin-bottom: 1rem; font-size: 1.8rem; color: #00f0ff; text-shadow: 0 0 5px #00f0ff; }
+
+.card { background: #1e1e1e; padding: 1rem; margin-bottom: 1rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 240, 255, 0.05); transition: transform 0.3s, box-shadow 0.3s; }
+
+.card:hover { transform: translateY(-5px); box-shadow: 0 0 20px rgba(0, 240, 255, 0.2); }
+
+footer { text-align: center; padding: 1rem; background: #0f0f0f; color: #aaa; border-top: 2px solid #00f0ff; margin-top: 3rem; }
+
+input[type="text"], input[type="email"], textarea { width: 100%; padding: 0.75rem; border: 1px solid #333; background: #121212; color: #eee; border-radius: 8px; margin-bottom: 1rem; }
+
+button, input[type="submit"] { padding: 0.75rem 1.5rem; background: #00f0ff; color: #000; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; transition: background 0.3s ease; }
+
+button:hover, input[type="submit"]:hover { background: #00d8e6; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Responsive */ @media screen and (max-width: 768px) { nav { flex-direction: column; align-items: center; }
+
+header h1 { font-size: 1.6rem; }
+
+main { padding: 1rem; } }
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | SKY Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-title {
+      text-align: center;
+      padding: 10px;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Watermark -->
+  <div class="watermark">THE SKY</div>
+
+  <!-- Header -->
+  <header>
+    <h1>SKY Project Gallery</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="sky-files.html">SKY Files</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Gallery Section -->
+  <main>
+    <h2 class="gallery-title">A Visual Journey of SKY</h2>
+    <p style="text-align:center;">Photos of prototypes, designs, sketches, circuits, and development stages of the SKY Assistant project.</p>
+    
+    <div class="gallery">
+      <!-- Sample images – replace src with your actual image files -->
+      <img src="images/sketch1.jpg" alt="SKY early sketch">
+      <img src="images/prototype.jpg" alt="SKY prototype">
+      <img src="images/app-interface.jpg" alt="App interface">
+      <img src="images/robot-transformation.jpg" alt="Robot transformation">
+      <img src="images/circuit-design.jpg" alt="Circuit wiring">
+      <img src="images/voice-module.jpg" alt="Voice module">
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SKY Assistant Project. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

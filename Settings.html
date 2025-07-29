@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SKY - Settings</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>SKY AI Settings</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About SKY</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="settings.html" class="active">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="settings-section">
+    <h2>User Preferences</h2>
+
+    <div class="setting-card">
+      <h3>🔐 Ownership Notice</h3>
+      <p><strong>SKY is a private AI assistant personally owned by Ibrahim Nyandwaro Kironga.</strong> Anyone wishing to use, copy, or modify SKY must seek permission from the owner. Unauthorized use is not allowed.</p>
+    </div>
+
+    <div class="setting-card">
+      <h3>🌐 Language Settings</h3>
+      <label for="language">Preferred Language:</label>
+      <select id="language">
+        <option value="english">English</option>
+        <option value="kiswahili">Kiswahili</option>
+      </select>
+    </div>
+
+    <div class="setting-card">
+      <h3>🎤 Voice Command Options</h3>
+      <label><input type="checkbox" checked /> Enable voice activation ("Hey SKY")</label><br/>
+      <label><input type="checkbox" /> Allow SKY to speak responses out loud</label>
+    </div>
+
+    <div class="setting-card">
+      <h3>⚙️ AI Behavior</h3>
+      <label><input type="checkbox" checked /> Debug Mode (for development testing)</label><br/>
+      <label><input type="checkbox" /> Auto-correct minor errors</label><br/>
+      <label><input type="checkbox" /> Ask for confirmation before critical actions</label>
+    </div>
+
+    <div class="setting-card">
+      <h3>🔔 Notifications</h3>
+      <label><input type="checkbox" checked /> Daily reminders</label><br/>
+      <label><input type="checkbox" /> Activity suggestions</label>
+    </div>
+
+    <div class="setting-card">
+      <h3>🔓 Permissions</h3>
+      <p>Only the registered owner can unlock full developer access or edit internal modules.</p>
+      <button class="btn">Request Permission</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SKY AI Project. Built and owned by Ibrahim Nyandwaro Kironga.</p>
+  </footer>
+</body>
+</html>
